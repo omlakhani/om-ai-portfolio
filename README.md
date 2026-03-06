@@ -478,7 +478,8 @@ The finished website should feel like a **cinematic journey through Om’s creat
 
 Visitors should leave understanding that Om builds:
 
-**AI-powered storytelling experiences that combine creativity with technology.**
-=======
+# **AI-powered storytelling experiences that combine creativity with technology.**
+
 # om-ai-portfolio
->>>>>>> 45a8c1ef1e3fbb051a11d43d015a75ff646fdc2c
+
+> > > > > > > 45a8c1ef1e3fbb051a11d43d015a75ff646fdc2c
