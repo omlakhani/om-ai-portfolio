@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Root Variables ─────────────────────────────── */
+:root {
+  background-color: #0b0b0c;
+  color: #ffffff;
+  --color-bg: #0b0b0c;
+  --color-accent-gold: rgba(255, 200, 120, 0.15);
+  --color-accent-teal: rgba(80, 200, 200, 0.1);
+}
+
+/* ─── Base ───────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #0b0b0c;
+  /* Phase 19 — font rendering polish */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ─── Text Selection ─────────────────────────────── */
+::selection {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* ─── Custom Scrollbar ───────────────────────────── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ─── Cinematic Film Grain Overlay ───────────────── */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  animation: grainShift 0.5s steps(1) infinite;
+}
+
+@keyframes grainShift {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  20% {
+    background-position: -10% -20%;
+  }
+
+  40% {
+    background-position: 15% 10%;
+  }
+
+  60% {
+    background-position: -15% 25%;
+  }
+
+  80% {
+    background-position: 10% -15%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* ─── Accessibility — Focus Rings ────────────────── */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.4);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── Section Reveal Utility (used by ScrollSystem) ─ */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* ─── Modal Scrollbar ────────────────────────────── */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ─── Scroll Indicator Animation ────────────────── */
+@keyframes scrollLine {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}

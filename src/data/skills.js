@@ -1,0 +1,53 @@
+export const skillsData = {
+    "Tech": [
+        "Python Programming",
+        "JavaScript & Modern Web Development",
+        "React Frontend Development",
+        "HTML5 / CSS3 / TailwindCSS",
+        "Git & GitHub Version Control",
+        "REST API Integration",
+        "Three.js & Interactive Web Graphics",
+        "GSAP Animation Systems",
+        "Frontend Performance Optimization",
+        "Responsive UI Development",
+        "UI/UX Interaction Design",
+        "Prompt Engineering Workflows",
+        "Automation Systems (n8n)",
+        "Basic IoT System Development",
+        "CLI & Developer Tooling"
+    ],
+    "Creative": [
+        "Storytelling & Narrative Design",
+        "Script Writing (Short Films & Digital Content)",
+        "Concept Development for Videos",
+        "Cinematic Visual Storyboarding",
+        "Video Direction & Creative Supervision",
+        "Audience Psychology & Engagement Strategy",
+        "Social Media Content Strategy",
+        "Narrative Driven Branding",
+        "Creative Ideation & Concept Building",
+        "Digital Content Writing",
+        "Long-form Script Writing (YouTube)",
+        "Short-form Content Writing (Reels / Shorts)",
+        "Story Structure & Character Arcs",
+        "Creative Research & Theme Development",
+        "Visual Narrative Planning"
+    ],
+    "AI": [
+        "AI Filmmaking Workflows",
+        "Diffusion Model Image Generation",
+        "Prompt Engineering for Generative AI",
+        "AI-assisted Script Generation",
+        "AI Image-to-Video Pipelines",
+        "Computer Vision Fundamentals",
+        "NLP-based Story Generation",
+        "AI Content Automation",
+        "AI Media Production Pipelines",
+        "Creative AI Tool Integration",
+        "AI-assisted Storyboarding",
+        "AI-powered Content Ideation",
+        "AI Prompt Optimization Techniques",
+        "AI-assisted Editing Workflows",
+        "AI-driven Creative Experimentation"
+    ]
+};
